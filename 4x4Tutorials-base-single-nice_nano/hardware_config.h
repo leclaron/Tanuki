@@ -25,15 +25,15 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 /* HARDWARE DEFINITION*/
 /* key matrix size */
 #define MATRIX_ROWS 4
-#define MATRIX_COLS 4
+#define MATRIX_COLS 11
 
-	#define MATRIX_ROW_PINS {43, 3, 28, 45}
-	#define MATRIX_COL_PINS {2, 29, 30,  26} // last 4: 6, 5, 8, 41, 22, 13, 20, 17,10, 38, 9, 24
+	#define MATRIX_ROW_PINS {47, 45, 22, 20}
+	#define MATRIX_COL_PINS {43, 10, 9, 38, 36, 11, 32, 24, 31, 29, 2} // last 4: 6, 5, 8, 41, 22, 13, 20, 17,10, 38, 9, 24
 
-	#define WS2812B_LED_PIN 15
+	#define WS2812B_LED_PIN 17
 	
-	#define WS2812B_LED_COUNT 1
-	#define WS2812B_LED_ON 1 
+	#define WS2812B_LED_COUNT 5
+	#define WS2812B_LED_ON 5 
 #define BATTERY_TYPE BATT_LIPO
 #define VBAT_PIN  31
 
