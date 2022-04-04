@@ -26,23 +26,23 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 
 #define DEVICE_NAME_R                         "4x4Backpack_R"                         /**< Name of device. Will be included in the advertising data. */
 #define DEVICE_NAME_L                         "4x4Backpack_L"                         /**< Name of device. Will be included in the advertising data. */
-#define DEVICE_NAME_M                         "4x4Backpack"                           /**< Name of device. Will be included in the advertising data. */
+#define DEVICE_NAME_M                         "Tanuki Blu"                           /**< Name of device. Will be included in the advertising data. */
 
-#define DEVICE_MODEL                        "4x4Backpack_V1"                          /**< Name of device. Will be included in the advertising data. */
+#define DEVICE_MODEL                        "Tanuki Blu"                          /**< Name of device. Will be included in the advertising data. */
 
 #define MANUFACTURER_NAME                   "keyboards.jpconstantineau.com"         /**< Manufacturer. Will be passed to Device Information Service. */
 
 
 #define KEYMAP( \
-	 K00,   K01,   K02,   K03,      \
-	 K10,   K11,   K12,   K13,     \
-	 K20,   K21,   K22,   K23,     \
-	 K30,   K31,   K32,   K33 \
+	 k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, k0a, \
+	 k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, k1a, \
+	 k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, k2a, \
+	 k30, k31, k32, k33, k34, k35, k36,      k38, k39 \
 ) { \
-	{ K00,   K01,   K02,   K03,   }, \
-	{ K10,   K11,   K12,   K13,   }, \
-	{ K20,   K21,   K22,   K23,   }, \
-	{ K30,   K31,   K32,   K33    } \
+	{k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, k0a}, \
+	{k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, k1a}, \
+	{k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, k2a}, \
+	{k30, k31, k32, k33, k34, k35, k36, XXX, k38, k39, XXX} \
 }
 
 
