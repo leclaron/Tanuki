@@ -20,7 +20,7 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
     {{
         {KC_Q,      KC_W,      KC_E,    KC_R,    KC_T,     KC_Y,    KC_U,   KC_I,   KC_O,     KC_P,     KC_BSPACE,},
-        {KC_A,      KC_S,      KC_D,    KC_F,    KC_G,     KC_H,    KC_J,   KC_K,   KC_L,     KC_SCLN,  TG(_GL),},
+        {KC_A,      KC_S,      KC_D,    KC_F,    KC_G,     KC_H,    KC_J,   KC_K,   KC_L,     KC_SCLN,  L_RAISE,},
         {KC_LSFT,   KC_Z,      KC_X,    KC_C,    KC_V,     KC_B,    KC_N,   KC_M,   KC_QUOT,  KC_SLSH,  KC_ENT,},
         {KC_TAB,    KC_ESC,    KC_LCTL, KC_LALT, KC_COMMA, L_LOWER, L_RAISE,        KC_DOT,   KC_LGUI}
     }};
@@ -45,17 +45,17 @@ void setupKeymap() {
 
     uint32_t adjust[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP(
-    _______, RESET,   _______,  RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI,   RGB_SAD,    RGB_VAI,   RGB_VAD,   KC_DEL ,
-    _______, _______, _______,  _______, _______, _______, _______, KM_QWERTY, KM_COLEMAK, KM_DVORAK, KM_PLOVER, _______,
-    _______, _______, _______,  _______, _______, _______, _______, _______,   _______,    _______,   _______,   _______,
-    _______, _______, _______,  _______, L_LOWER, _______, _______, L_RAISE,   _______,    _______,   _______,   _______);
+        RESET,   _______,  RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI,   RGB_SAD,    RGB_VAI,   RGB_VAD,   KC_DEL ,
+        _______, _______, _______,  _______, _______, _______, _______, KM_QWERTY, KM_COLEMAK, KM_DVORAK, KM_PLOVER, 
+        _______, _______,  _______, _______, _______, _______, _______,   _______,    _______,   _______,   _______,
+        _______, _______, _______,  _______, L_LOWER, _______,          L_RAISE,    _______);
 
     uint32_t macro[MATRIX_ROWS][MATRIX_COLS] =            // XXXXXXX = nothing    _______ = transparent = use lower layer keycode
         KEYMAP(
-    PRINT_BATTERY, HOME_ADD, EMAIL_1,  NAME_1,  CBR_FN,  PHONE_1, TAB_DOWN_RTRN, INOWORD,  IN_R,      IPADDR,     SMILE,     IPSUM ,
-    PRINT_INFO   , WORK_ADD, EMAIL_2,  NAME_2,  BRC_FN,  PHONE_2, TAB_UP_RTRN,   FOREXMPL, XXXXXXX,   XXXXXXX,    XXXXXXX,   XXXXXXX,
-    XXXXXXX      , XXXXXXX,  XXXXXXX,  NAME_3,  PRN_FN,  XXXXXXX, XXXXXXX,       FF_TEXT,  XXXXXXX,   LARW_L,     LARW_R,    XXXXXXX,
-    L_MACRO      , XXXXXXX,  XXXXXXX,  XXXXXXX, L_LOWER, XXXXXXX, XXXXXXX,       L_RAISE,  KM_QWERTY, KM_COLEMAK, KM_DVORAK, KM_PLOVER);
+        PRINT_BATTERY, HOME_ADD, EMAIL_1,  NAME_1,  CBR_FN,  PHONE_1, TAB_DOWN_RTRN, INOWORD,  IN_R,      IPADDR,     SMILE, 
+        PRINT_INFO   , WORK_ADD, EMAIL_2,  NAME_2,  BRC_FN,  PHONE_2, TAB_UP_RTRN,   FOREXMPL, XXXXXXX,   XXXXXXX,    XXXXXXX,
+        XXXXXXX      , XXXXXXX,  XXXXXXX,  NAME_3,  PRN_FN,  XXXXXXX, XXXXXXX,       FF_TEXT,  XXXXXXX,   LARW_L,     LARW_R, 
+        L_MACRO      , XXXXXXX,  XXXXXXX,  XXXXXXX, L_LOWER, XXXXXXX,                KM_COLEMAK, KM_PLOVER);
 
     /*
      * add the other layers
