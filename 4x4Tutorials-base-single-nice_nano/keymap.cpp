@@ -41,14 +41,14 @@ void setupKeymap() {
         KC_LBRC, KC_RBRC, KC_LCBR, KC_RCBR, KC_PIPE, KC_BSLS, KC_PLUS, KC_UNDS, KC_MINS, KC_EQL,  KC_DEL,
         KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, ______,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, ______,
-        _______, _______, _______, _______, _______, _______,          _______, _______                );
+        _______, _______, _______, _______, _______, _______,          _______, _______);
 
     uint32_t adjust[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP(
         RESET,   _______,  RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI,  RGB_SAD,    RGB_VAI,    RGB_VAD,   KC_DEL ,
         _______, _______,  _______, _______, _______, _______, _______,  KM_QWERTY,  KM_COLEMAK, KM_DVORAK, KM_PLOVER, 
         _______, _______,  _______, _______, _______, _______, _______,  _______,    _______,    _______,   _______,
-        _______, _______, _______,  _______, L_LOWER, _______,           L_RAISE,    _______                      );
+        _______, _______, _______,  _______, L_LOWER, _______,           L_RAISE,    _______);
 
     uint32_t macro[MATRIX_ROWS][MATRIX_COLS] =            // XXXXXXX = nothing    _______ = transparent = use lower layer keycode
         KEYMAP(
@@ -83,21 +83,21 @@ void process_user_macros(uint16_t macroid)
         KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,     KC_P,     KC_BSPACE,
         KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,     KC_SCLN,  KC_QUOT,
         KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMMA, KC_DOT,   KC_ENTER, 
-        KC_LCTL, KC_LALT, KC_LGUI, L_LOWER, KC_SPC,  KC_SPC,           KC_UP,    KC_RIGHT                  );
+        KC_LCTL, KC_LALT, KC_LGUI, L_LOWER, KC_SPC,  KC_SPC,           KC_UP,    KC_RIGHT);
     
     uint32_t colemak[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP(
         KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_BSPC,
         KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_H,    KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT,
         KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT ,
-        KC_LCTL, KC_LALT, KC_LGUI, L_LOWER, KC_SPC,  L_RAISE,          KC_UP,   KC_RGHT                 );
+        KC_LCTL, KC_LALT, KC_LGUI, L_LOWER, KC_SPC,  L_RAISE,          KC_UP,   KC_RGHT);
     
     uint32_t dvorak[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP(
         KC_QUOT, KC_COMM, KC_DOT,  KC_P,    KC_Y,    KC_F,    KC_G,    KC_C,    KC_R,    KC_L,    KC_BSPC,
         KC_A,    KC_O,    KC_E,    KC_U,    KC_I,    KC_D,    KC_H,    KC_T,    KC_N,    KC_S,    KC_SLSH,
         KC_SCLN, KC_Q,    KC_J,    KC_K,    KC_X,    KC_B,    KC_M,    KC_W,    KC_V,    KC_Z,    KC_ENT ,
-        KC_LCTL, KC_LALT, KC_LGUI, L_LOWER, KC_SPC,  L_RAISE,          KC_DOWN, KC_RGHT                 );
+        KC_LCTL, KC_LALT, KC_LGUI, L_LOWER, KC_SPC,  L_RAISE,          KC_DOWN, KC_RGHT);
     
 
     uint32_t plover[MATRIX_ROWS][MATRIX_COLS] =
@@ -105,7 +105,7 @@ void process_user_macros(uint16_t macroid)
         KC_QUOT, KC_COMM, KC_DOT,  KC_P,    KC_Y,    KC_F,    KC_G,    KC_C,    KC_R,    KC_L,    KC_BSPC,
         KC_A,    KC_O,    KC_E,    KC_U,    KC_I,    KC_D,    KC_H,    KC_T,    KC_N,    KC_S,    KC_SLSH,
         KC_SCLN, KC_Q,    KC_J,    KC_K,    KC_X,    KC_B,    KC_M,    KC_W,    KC_V,    KC_Z,    KC_ENT ,
-        KC_LCTL, KC_LALT, KC_LGUI, L_LOWER, KC_SPC,  L_RAISE,          KC_DOWN, KC_RGHT                 );
+        KC_LCTL, KC_LALT, KC_LGUI, L_LOWER, KC_SPC,  L_RAISE,          KC_DOWN, KC_RGHT);
     
  switch ((macroid))
  { 
