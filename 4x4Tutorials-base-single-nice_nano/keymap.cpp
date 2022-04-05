@@ -34,21 +34,21 @@ void setupKeymap() {
         KC_F2, KC_F3,   KC_F4,  KC_F5,  KC_F6, KC_F7,  KC_F8,  KC_F9,  KC_F10,  KC_F11, KC_F12, 
         KC_1,  KC_2,    KC_3,   KC_4,   KC_5,  KC_6,   KC_7,   KC_8,   KC_9,    KC_0,   ______,
         _____, KC_PSCR, _____,  _____,  _____, _____,  _____,  _____,  _____,   _____,  ______,
-        _____, KC_F1,   _____,  _____,  _____, _____,  _____,          _____,   _____);
+        _____, KC_F1,   _____,  _____,  _____, _____,  _____,          _____,   _____,);
 
     uint32_t raise[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP(
         KC_LBRC, KC_RBRC, KC_LCBR, KC_RCBR, KC_PIPE, KC_BSLS, KC_PLUS, KC_UNDS, KC_MINS, KC_EQL,  KC_DEL,
         KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, ______,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, ______,
-        _______, _______, _______, _______, _______, _______,          _______, _______);
+        _______, _______, _______, _______, _______, _______,          _______, _______,);
 
     uint32_t adjust[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP(
         RESET,   _______,  RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI,  RGB_SAD,    RGB_VAI,    RGB_VAD,   KC_DEL ,
         _______, _______,  _______, _______, _______, _______, _______,  KM_QWERTY,  KM_COLEMAK, KM_DVORAK, KM_PLOVER, 
         _______, _______,  _______, _______, _______, _______, _______,  _______,    _______,    _______,   _______,
-        _______, _______, _______,  _______, L_LOWER, _______,           L_RAISE,    _______);
+        _______, _______, _______,  _______, L_LOWER, _______,           L_RAISE,    _______,);
 
     uint32_t macro[MATRIX_ROWS][MATRIX_COLS] =            // XXXXXXX = nothing    _______ = transparent = use lower layer keycode
         KEYMAP(
